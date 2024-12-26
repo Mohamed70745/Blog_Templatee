@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Café</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+</head>
+<body>
+  
+    <header>
+        <div class="logo">
+            <h1>Green Café</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservation">Réservations</a></li>
+                <li><a href="#gallery">Galerie</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section id="home" class="hero">
+        <h2>Bienvenue chez Green Café</h2>
+        <p>Le café écoresponsable qui ravit vos sens.</p>
+    </section>
+
+   
+    <section id="menu">
+        <h3>Notre Menu</h3>
+        <ul class="menu-items">
+            <li>Cappuccino Bio</li>
+            <li>Thé Vert</li>
+            <li>Latte Macchiato</li>
+            <li>Pâtisseries Vegan</li>
+        </ul>
+    </section>
+
+   
+    <section id="reservation">
+        <h3>Réservez une Table</h3>
+        <form id="reservation-form">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Date :</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit">Réserver</button>
+        </form>
+    </section>
+
+    
+    <section id="gallery">
+        <h3>Découvrez nos délices</h3>
+        <div id="image-slider" class="slider">
+            <img src="images/coffee1.jpg" alt="Café 1">
+            <img src="images/coffee2.jpg" alt="Café 2">
+            <img src="images/coffee3.png" alt="Café 3">
+        </div>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2024 Green Café - Tous droits réservés.</p>
+    </footer>
+
+    
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("your_user_id");
+        })();
+    </script>
+</body>
+</html>
